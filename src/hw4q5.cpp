@@ -30,12 +30,12 @@ void Queue2Stack<Item>::pop() {
     if (used < 1) {
         return;
     }
-    s1.pop();
+    q1.pop();
     used --;
 }
 
 template <class Item>
-size_t Queue2Stack<Item::size() const {
+size_t Queue2Stack<Item>::size() const {
     return used;
 }
 
@@ -46,7 +46,7 @@ bool Queue2Stack<Item>::empty() const {
 
 template <class Item>
 Item Queue2Stack<Item>::top() const {
-    return s1.front();
+    return q1.front();
 }
 
 #endif
