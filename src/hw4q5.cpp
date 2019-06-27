@@ -25,7 +25,14 @@ void Queue2Stack<Item>::push(const Item& entry) {
     used++;
 }
 
-
+template <class Item>
+void Queue2Stack<Item>::pop() {
+    if (used < 1) {
+        return;
+    }
+    s1.pop();
+    used --;
+}
 
 #endif
 
