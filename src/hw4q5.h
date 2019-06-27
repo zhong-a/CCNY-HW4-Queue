@@ -1,5 +1,5 @@
-#ifndef __HW4Q4_H__
-#define __HW4Q4_H__
+#ifndef __HW4Q5_H__
+#define __HW4Q5_H__
 // Previous two lines are the start of the marco guard
 
 // CSc 21200 - Spring 2019

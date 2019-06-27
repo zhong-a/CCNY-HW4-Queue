@@ -18,13 +18,68 @@ Queue<Item>::Queue(const Queue<Item>& source) {
     used = source.used;
     first = source.first;
     last = source.last;
-    for (int i = first; i < last; i = nextIndex(i)) {
-        data[i] = source.data[i];
+    data = new Item[capacity];
+    int indx = first;
+    for (int i = 0; i < used; i = nextIndex(i)) {
+        data[indx] = source.data[indx];
+        indx = nextIndex(indx);
     }
 }
 
 template <class Item>
 Queue<Item>::~Queue() {
     delete[] data;
+    used = 0;
 }
 
+template <class Item>
+void Queue<Item>::push(const Item& entry) {
+    if (used == capacity) {
+        return;
+    }
+    data[last] = entry;
+    last = nextIndex(last);
+    used++;
+}
+
+template <class Item>
+void Queue<Item>::pop() {
+    if (used < 1) {
+        return;
+    }
+    first = nextIndex(first);
+    used--;
+}
+
+template <class Item>
+void Queue<Item>::operator=(const Queue<Item>& source) {
+    this->used = source.used;
+    this->capacity = source.capacity;
+    this->first = source.first;
+    this->last = source.last;
+    int indx = first;
+    for (int i = 0; i < used; i++) {
+        data[indx] = source.data[indx];
+        indx = nextIndex(indx);
+    }
+}
+
+template <class Item>
+size_t Queue<Item>::size() const {
+    return used;
+}
+
+template <class Item>
+bool Queue<Item>::empty() const {
+    return (used == 0);
+}
+
+template <class Item>
+Item Queue<Item>::front() const {
+    if (used < 1) {
+        return Item();
+    }
+    return data[first];
+}
+
+#endif

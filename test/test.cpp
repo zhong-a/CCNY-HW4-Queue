@@ -104,7 +104,7 @@ TEST(queue, assignment) {
     EXPECT_EQ(true, q2.empty());
 }
 
-TEST(Queue2Stack, queueOp) {
+/*TEST(Queue2Stack, queueOp) {
     Queue2Stack<int> s1;
 
     EXPECT_EQ(0, s1.size());
@@ -132,7 +132,7 @@ TEST(Queue2Stack, queueOp) {
     s1.pop();
     EXPECT_EQ(0, s1.size());
     EXPECT_EQ(true, s1.empty());
-}
+}*/
 
 
 
