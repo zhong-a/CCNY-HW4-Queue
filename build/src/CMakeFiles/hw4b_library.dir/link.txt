@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc libhw4b_library.a  CMakeFiles/hw4b_library.dir/hw4q2.cpp.o CMakeFiles/hw4b_library.dir/hw4q5.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib libhw4b_library.a

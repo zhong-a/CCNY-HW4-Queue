@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/alan/Desktop/CCNYSummerWork/Git-Public-HW4/Queue/src/hw4q2.cpp
+hw4q2.h
+/Users/alan/Desktop/CCNYSummerWork/Git-Public-HW4/Queue/src/hw4q2.h
+
+/Users/alan/Desktop/CCNYSummerWork/Git-Public-HW4/Queue/src/hw4q2.h
+iostream
+-
+cstdlib
+-
+cassert
+-
+hw4q2.cpp
+/Users/alan/Desktop/CCNYSummerWork/Git-Public-HW4/Queue/src/hw4q2.cpp
+
+/Users/alan/Desktop/CCNYSummerWork/Git-Public-HW4/Queue/src/hw4q5.cpp
+hw4q5.h
+/Users/alan/Desktop/CCNYSummerWork/Git-Public-HW4/Queue/src/hw4q5.h
+
+/Users/alan/Desktop/CCNYSummerWork/Git-Public-HW4/Queue/src/hw4q5.h
+iostream
+-
+cstdlib
+-
+cassert
+-
+hw4q2.h
+/Users/alan/Desktop/CCNYSummerWork/Git-Public-HW4/Queue/src/hw4q2.h
+hw4q5.cpp
+/Users/alan/Desktop/CCNYSummerWork/Git-Public-HW4/Queue/src/hw4q5.cpp
+
