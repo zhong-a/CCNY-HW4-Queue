@@ -34,6 +34,21 @@ void Queue2Stack<Item>::pop() {
     used --;
 }
 
+template <class Item>
+size_t Queue2Stack<Item::size() const {
+    return used;
+}
+
+template <class Item>
+bool Queue2Stack<Item>::empty() const {
+    return (used == 0);
+}
+
+template <class Item>
+Item Queue2Stack<Item>::top() const {
+    return s1.front();
+}
+
 #endif
 
 
